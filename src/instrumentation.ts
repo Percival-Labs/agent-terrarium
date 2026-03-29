@@ -1,5 +1,7 @@
-import { registerOTel } from "@vercel/otel";
+// Telemetry disabled — no data sent to external services.
+// Original: @vercel/otel sent traces to Vercel infrastructure.
+// Removed for security: agent data must stay internal.
 
 export const register = () => {
-  registerOTel({ serviceName: "claw3d" });
+  // no-op
 };
